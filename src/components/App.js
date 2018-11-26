@@ -69,10 +69,7 @@ class App extends React.Component {
                 return movies.vote_average >= movieRating;
             }
             function filterByBoth(movies) {
-                let genreSelectedString = genreSelected.toString();
-                //let genreNum = (18,36);
-                return movies.vote_average >= movieRating && movies.genre_ids.indexOf((Number(genreSelectedString))) >= 0;
-                //return movies.vote_average >= movieRating && movies.genre_ids.includes(genreNum);
+                return (movies.vote_average >= movieRating) && genreSelected.every(v => movies.genre_ids.indexOf(v) >= 0);
             }
 
             if(genreSelected.length === 0){
