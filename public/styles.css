@@ -1,0 +1,135 @@
+header,
+footer {
+    background: #1c1c1c;
+    height: 50px;
+    width: 100%;
+}
+.movie-wrapper h1 {
+    font-size: 34px;
+    padding: 30px 15px;
+}
+.movie-wrapper ul.grid {
+    list-style: none;
+    padding: 0;
+}
+.movie-wrapper ul.grid li {
+    float: left;
+}
+.movie-wrapper ul.grid li img {
+    height: auto;
+    width: 100%;
+}
+.movie-thumb .movie-thumb-text {
+    height: 150px;
+    min-height: 150px;
+    padding: 10px 5px;
+    text-align: center;
+}
+.movie-thumb .movie-thumb-title {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+.movie-thumb .movie-thumb-genre {
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.movie-rating {
+    margin: 10px 0 20px;
+}
+.movie-genre {
+    margin: 10px 0 20px;
+}
+.option-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.form-check-inline {
+    margin-right: 15px;
+}
+.form-check-inline .form-check-input {
+    margin-right: 8px;
+}
+
+.loadmorebtn {
+    background: #999999;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 auto;
+    text-align: center;
+    transition: all 0.3s;
+    width: 50%;
+}
+.loadmorebtn p {
+    font-size: 28px;
+    padding: 10px 20px;
+}
+.loadmorebtn:hover {
+    opacity: 0.8;
+}
+
+.loader {
+    animation: spin 0.8s linear infinite;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #999999;
+    border-radius: 50%;
+    height: 50px;
+    margin: 20px auto;
+    width: 50px;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .movie-wrapper ul.grid li:nth-child(2n + 1) {
+        clear: both;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .movie-wrapper ul.grid li:nth-child(3n + 1) {
+        clear: both;
+    }
+    .movie-thumb .movie-thumb-text {
+        height: 190px;
+    }
+}
+@media (min-width: 992px) {
+    .movie-wrapper ul.grid li:nth-child(4n + 1) {
+        clear: both;
+    }
+}
