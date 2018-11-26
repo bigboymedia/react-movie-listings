@@ -20,4 +20,4 @@ A browser window should automatically open, with `http://localhost:3000` as the 
 * TMDB only returns results in 'pages' of 20 movies at a time - to view more, please click the 'Load More' button at the bottom of the returned list, however this does need to call the API a second time.
 * The genre sidebar name list is auto-populated by a call to the Movie Genres API.
 * The slider for 'Ratings' has a small timeout delay to prevent too many calls from over-eager rating fans!
-* Genre selected - currently only works with a single selected genre unfortunately (multiple selections will create a NaN) - array.indexOf and array.includes work best with strings, with multiple integers needing to be hard-coded (see commented example in App.js line 77).
+* Genre selected - works with multiple selections.
